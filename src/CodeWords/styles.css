@@ -1,0 +1,44 @@
+.codeWords {
+  position: relative;
+  background-image: url('./images/code-words.png');
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 37%;
+}
+
+.circledOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-image: radial-gradient(
+    circle at -50% -50%,
+    rgba(30, 67, 145, 0) 0%,
+    rgba(30, 67, 145, 0) 120px,
+    rgba(30, 67, 145, 1) 180px,
+    rgba(30, 67, 145, 1) 100%
+  );
+}
+
+.noiseOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.3;
+  background-image: url('./images/noise.svg');
+}
+
+.content {
+  position: relative;
+  z-index: 3;
+}
